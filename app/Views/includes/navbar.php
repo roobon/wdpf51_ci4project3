@@ -1,4 +1,4 @@
-<?php echo $page = basename($_SERVER['PHP_SELF']); ?>
+<?php $page = basename($_SERVER['PHP_SELF']); ?>
 <div class="p-5 bg-primary text-white text-center">
     <h1>My First Bootstrap 5 Page</h1>
     <p>Resize this responsive page to see the effect!</p>
@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link <?= ($page == 'index.php') ? 'active' : ''; ?>" href="/">Home</a>
+                <a class="nav-link <?= ($page == 'index.php') ? 'active' : ''; ?>" href="/home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?= ($page == 'about') ? 'active' : ''; ?>" href="/about">About</a>
@@ -16,7 +16,7 @@
                 <a class="nav-link <?= ($page == 'contact') ? 'active' : ''; ?>" href="/contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?= ($page == 'students') ? 'active' : ''; ?>" href="/students">Student List</a>
+                <a class="nav-link <?= ($page == 'student') ? 'active' : ''; ?>" href="/student">Student List</a>
             </li>
 
         </ul>
